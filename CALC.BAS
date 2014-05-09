@@ -1,41 +1,58 @@
+'<Calculator. A simple calculator in BASIC>
+'Copyright (C) <2014> <Navin Ipe>
+'Contact: navinipe at gmail dot com
+'
+'This program is free software: you can redistribute it and/or modify
+'it under the terms of the GNU General Public License as published by
+'the Free Software Foundation, either version 3 of the License, or
+'(at your option) any later version.
+'
+'This program is distributed in the hope that it will be useful,
+'but WITHOUT ANY WARRANTY; without even the implied warranty of
+'MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+'GNU General Public License for more details.
+'
+'You should have received a copy of the GNU General Public License
+'along with this program. If not, see <http://www.gnu.org/licenses/>.
+
 10 CLEAR:SCREEN 0, 0, 0: COLOR 7, 2: CLS : COLOR 15: DIM A(2): A(1) = 0: KEY OFF
-20 LOCATE 3, 6: PRINT "Ú"; STRING$(57, "Ä"); "¿"
-30 LOCATE 4, 6: PRINT "³ "; : COLOR 1, 8: PRINT STRING$(55, " "); : COLOR 7, 2: COLOR 15: PRINT " ³"
-40 LOCATE 5, 6: PRINT "³ "; : COLOR 1, 8: PRINT STRING$(55, " "); : COLOR 7, 2: COLOR 15: PRINT " ³"
-50 LOCATE 6, 6: PRINT "À"; STRING$(57, "Ä"); "Ù"
-60 LOCATE 2, 4: PRINT STRING$(73, "Ü")
-70 LOCATE 22, 4: PRINT STRING$(73, "ß")
-80 COLOR 1, 15: LOCATE 3, 69: PRINT "ÚÄÄÄÄ¿"
-90 LOCATE 4, 69: PRINT "³ F1 ³"
-100 LOCATE 5, 69: PRINT "³Help³"
-110 LOCATE 6, 69: PRINT "ÀÄÄÄÄÙ": COLOR 7, 2
+20 LOCATE 3, 6: PRINT "ï¿½"; STRING$(57, "ï¿½"); "ï¿½"
+30 LOCATE 4, 6: PRINT "ï¿½ "; : COLOR 1, 8: PRINT STRING$(55, " "); : COLOR 7, 2: COLOR 15: PRINT " ï¿½"
+40 LOCATE 5, 6: PRINT "ï¿½ "; : COLOR 1, 8: PRINT STRING$(55, " "); : COLOR 7, 2: COLOR 15: PRINT " ï¿½"
+50 LOCATE 6, 6: PRINT "ï¿½"; STRING$(57, "ï¿½"); "ï¿½"
+60 LOCATE 2, 4: PRINT STRING$(73, "ï¿½")
+70 LOCATE 22, 4: PRINT STRING$(73, "ï¿½")
+80 COLOR 1, 15: LOCATE 3, 69: PRINT "ï¿½ï¿½ï¿½ï¿½Ä¿"
+90 LOCATE 4, 69: PRINT "ï¿½ F1 ï¿½"
+100 LOCATE 5, 69: PRINT "ï¿½Helpï¿½"
+110 LOCATE 6, 69: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½": COLOR 7, 2
 120 R = 3: C1 = 4: C2 = 76
-130 COLOR 15: LOCATE R, C1: PRINT "Û": LOCATE R, C2: PRINT "Û"
+130 COLOR 15: LOCATE R, C1: PRINT "ï¿½": LOCATE R, C2: PRINT "ï¿½"
 140 IF R = 21 THEN 150 ELSE R = R + 1: GOTO 130
-150 COLOR 1, 15: LOCATE 1, 7: PRINT "®   C A L C U L A T O R   ¯"
-160 LOCATE 1, 54: PRINT "® By Navin.K.I ¯": COLOR 7, 2: COLOR 10: I = 15
-170 LOCATE 7, 6: PRINT "ÚÄÄÄÄÄÄÄ¿      ÚÄÄÄÄÄÄÄ¿      ÚÄÄÄÄÄÄÄ¿      ÚÄÄÄÄÄÄÄ¿      ÚÄÄÄÄÄÄÄ¿"
-180 LOCATE 8, 6: PRINT "³   1   ³      ³   2   ³      ³   3   ³      ³   "; : COLOR 9: PRINT "+"; : COLOR 10: PRINT "   ³      ³   "; : COLOR 9: PRINT "-"; : COLOR 10: PRINT "   ³"
-190 LOCATE 9, 6: PRINT "ÀÄÄÄÄÄÄÄÙ      ÀÄÄÄÄÄÄÄÙ      ÀÄÄÄÄÄÄÄÙ      ³       ³      ³       ³"
-200 LOCATE 10, 51: PRINT "ÀÄÄÄÄÄÄÄÙ      ÀÄÄÄÄÄÄÄÙ"
-210 LOCATE 11, 6: PRINT "ÚÄÄÄÄÄÄÄ¿      ÚÄÄÄÄÄÄÄ¿      ÚÄÄÄÄÄÄÄ¿      ÚÄÄÄÄÄÄÄ¿      ÚÄÄÄÄÄÄÄ¿"
-220 LOCATE 12, 6: PRINT "³   4   ³      ³   5   ³      ³   6   ³      ³   "; : COLOR 9: PRINT "X"; : COLOR 10: PRINT "   ³      ³   "; : COLOR 9: PRINT "ö"; : COLOR 10: PRINT "   ³"; ""
-230 LOCATE 13, 6: PRINT "ÀÄÄÄÄÄÄÄÙ      ÀÄÄÄÄÄÄÄÙ      ÀÄÄÄÄÄÄÄÙ      ³       ³      ³       ³"
-240 LOCATE 14, 51: PRINT "ÀÄÄÄÄÄÄÄÙ      ÀÄÄÄÄÄÄÄÙ"
-250 LOCATE 15, 6: PRINT "ÚÄÄÄÄÄÄÄ¿      ÚÄÄÄÄÄÄÄ¿      ÚÄÄÄÄÄÄÄ¿      ÚÄÄÄÄÄÄÄ¿      ÚÄÄÄÄÄÄÄ¿"
-260 LOCATE 16, 6: PRINT "³   7   ³      ³   8   ³      ³   9   ³      ³   "; : COLOR 9: PRINT "û"; : COLOR 10: PRINT "   ³      ³   "; : COLOR 6: PRINT "C"; : COLOR 10: PRINT "   ³"
-270 LOCATE 17, 6: PRINT "ÀÄÄÄÄÄÄÄÙ      ÀÄÄÄÄÄÄÄÙ      ÀÄÄÄÄÄÄÄÙ      ³       ³      ³   "; : COLOR 6: PRINT "E"; : COLOR 10: PRINT "   ³"
-280 LOCATE 18, 51: PRINT "ÀÄÄÄÄÄÄÄÙ      ÀÄÄÄÄÄÄÄÙ"
-290 LOCATE 19, 6: PRINT "ÚÄÄÄÄÄÄÄ¿      ÚÄÄÄÄÄÄÄ¿      ÚÄÄÄÄÄÄÄ¿      ÚÄÄÄÄÄÄÄ¿      ÚÄÄÄÄÄÄÄ¿"
-300 LOCATE 20, 6: PRINT "³   0   ³      ³   ù   ³      ³   10-  ³      ³  "; : COLOR 9: PRINT " ="; : PRINT "   ³      ³  "; : COLOR 0: PRINT "OFF"; : COLOR 10: PRINT "  ³"
-310 LOCATE 21, 6: PRINT "ÀÄÄÄÄÄÄÄÙ      ÀÄÄÄÄÄÄÄÙ      ÀÄÄÄÄÄÄÄÙ      ÀÄÄÄÄÄÄÄÙ      ÀÄÄÄÄÄÄÄÙ"
+150 COLOR 1, 15: LOCATE 1, 7: PRINT "ï¿½   C A L C U L A T O R   ï¿½"
+160 LOCATE 1, 54: PRINT "ï¿½ By Navin.K.I ï¿½": COLOR 7, 2: COLOR 10: I = 15
+170 LOCATE 7, 6: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿"
+180 LOCATE 8, 6: PRINT "ï¿½   1   ï¿½      ï¿½   2   ï¿½      ï¿½   3   ï¿½      ï¿½   "; : COLOR 9: PRINT "+"; : COLOR 10: PRINT "   ï¿½      ï¿½   "; : COLOR 9: PRINT "-"; : COLOR 10: PRINT "   ï¿½"
+190 LOCATE 9, 6: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½      ï¿½       ï¿½      ï¿½       ï¿½"
+200 LOCATE 10, 51: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+210 LOCATE 11, 6: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿"
+220 LOCATE 12, 6: PRINT "ï¿½   4   ï¿½      ï¿½   5   ï¿½      ï¿½   6   ï¿½      ï¿½   "; : COLOR 9: PRINT "X"; : COLOR 10: PRINT "   ï¿½      ï¿½   "; : COLOR 9: PRINT "ï¿½"; : COLOR 10: PRINT "   ï¿½"; ""
+230 LOCATE 13, 6: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½      ï¿½       ï¿½      ï¿½       ï¿½"
+240 LOCATE 14, 51: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+250 LOCATE 15, 6: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿"
+260 LOCATE 16, 6: PRINT "ï¿½   7   ï¿½      ï¿½   8   ï¿½      ï¿½   9   ï¿½      ï¿½   "; : COLOR 9: PRINT "ï¿½"; : COLOR 10: PRINT "   ï¿½      ï¿½   "; : COLOR 6: PRINT "C"; : COLOR 10: PRINT "   ï¿½"
+270 LOCATE 17, 6: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½      ï¿½       ï¿½      ï¿½   "; : COLOR 6: PRINT "E"; : COLOR 10: PRINT "   ï¿½"
+280 LOCATE 18, 51: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+290 LOCATE 19, 6: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿"
+300 LOCATE 20, 6: PRINT "ï¿½   0   ï¿½      ï¿½   ï¿½   ï¿½      ï¿½   10-  ï¿½      ï¿½  "; : COLOR 9: PRINT " ="; : PRINT "   ï¿½      ï¿½  "; : COLOR 0: PRINT "OFF"; : COLOR 10: PRINT "  ï¿½"
+310 LOCATE 21, 6: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
 320 NR = 11: R = 11: NC = 21: C = 21: T = 1: A = 0: B = 0: NUM$ = "": NU$ = "": H$ = "": K$ = "": SP = 0
-330 COLOR 30: LOCATE R, C: PRINT "ÉÍÍÍÍÍÍÍ»"
-340 LOCATE R + 2, C: PRINT "ÈÍÍÍÍÍÍÍ¼": COLOR 10
+330 COLOR 30: LOCATE R, C: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»"
+340 LOCATE R + 2, C: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼": COLOR 10
 350 ON KEY(1) GOSUB 1490: KEY(1) ON
 360 X$ = INKEY$
 370 COLOR 7, 2
-380 COLOR 15: LOCATE 22, 50: PRINT STRING$(25, "ß"): COLOR 10
+380 COLOR 15: LOCATE 22, 50: PRINT STRING$(25, "ï¿½"): COLOR 10
 390 IF X$ = CHR$(27) THEN GOTO 940
 400 IF X$ = CHR$(0) + CHR$(72) THEN NR = NR - 4: GOTO 490
 410 IF X$ = CHR$(0) + CHR$(80) THEN NR = NR + 4: GOTO 490
@@ -51,24 +68,24 @@
 510 IF NC > 66 THEN NC = 6
 520 IF NC < 6 THEN NC = 66
 530 IF NR > 6 AND NR < 16 AND NC > 52 THEN 540 ELSE 600
-540 COLOR 30: LOCATE NR, NC: PRINT "ÉÍÍÍÍÍÍÍ»"
-550 LOCATE NR + 3, NC: PRINT "ÈÍÍÍÍÍÍÍ¼"
-560 COLOR 10: LOCATE R, C: PRINT "ÚÄÄÄÄÄÄÄ¿"
-570 IF C = 51 OR C = 66 AND R <> 19 THEN LOCATE R + 3, C: PRINT "ÀÄÄÄÄÄÄÄÙ"
-580 IF C < 51 OR R = 19 THEN LOCATE R + 2, C: PRINT "ÀÄÄÄÄÄÄÄÙ"
+540 COLOR 30: LOCATE NR, NC: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»"
+550 LOCATE NR + 3, NC: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼"
+560 COLOR 10: LOCATE R, C: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿"
+570 IF C = 51 OR C = 66 AND R <> 19 THEN LOCATE R + 3, C: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+580 IF C < 51 OR R = 19 THEN LOCATE R + 2, C: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
 590 R = NR: C = NC: GOTO 350
 600 IF NR > 6 AND NR < 16 AND NC > 50 THEN 610 ELSE 670
-610 COLOR 10: LOCATE R, C: PRINT "ÚÄÄÄÄÄÄÄ¿"
-620 IF C = 51 OR C = 66 AND R <> 19 THEN LOCATE R + 3, C: PRINT "ÀÄÄÄÄÄÄÄÙ"
-630 IF C < 51 OR R = 19 THEN LOCATE R + 2, C: PRINT "ÀÄÄÄÄÄÄÄÙ"
-640 COLOR 30: LOCATE NR, NC: PRINT "ÉÍÍÍÍÍÍÍ»"
-650 LOCATE NR + 3, NC: PRINT "ÈÍÍÍÍÍÍÍ¼"
+610 COLOR 10: LOCATE R, C: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿"
+620 IF C = 51 OR C = 66 AND R <> 19 THEN LOCATE R + 3, C: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+630 IF C < 51 OR R = 19 THEN LOCATE R + 2, C: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+640 COLOR 30: LOCATE NR, NC: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»"
+650 LOCATE NR + 3, NC: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼"
 660 R = NR: C = NC: GOTO 350
-670 COLOR 30: LOCATE NR, NC: PRINT "ÉÍÍÍÍÍÍÍ»"
-680 LOCATE NR + 2, NC: PRINT "ÈÍÍÍÍÍÍÍ¼"
-690 COLOR 10: LOCATE R, C: PRINT "ÚÄÄÄÄÄÄÄ¿"
-700 IF (C = 51 AND R <> 19) OR C = 66 THEN LOCATE R + 3, C: PRINT "ÀÄÄÄÄÄÄÄÙ"
-710 IF C < 51 OR R = 19 THEN LOCATE R + 2, C: PRINT "ÀÄÄÄÄÄÄÄÙ"
+670 COLOR 30: LOCATE NR, NC: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»"
+680 LOCATE NR + 2, NC: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼"
+690 COLOR 10: LOCATE R, C: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿"
+700 IF (C = 51 AND R <> 19) OR C = 66 THEN LOCATE R + 3, C: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+710 IF C < 51 OR R = 19 THEN LOCATE R + 2, C: PRINT "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
 720 R = NR: C = NC: GOTO 350
 730 IF R = 7 AND C = 6 THEN N$ = "1"
 740 IF R = 7 AND C = 21 THEN N$ = "2"
@@ -83,7 +100,7 @@
 830 IF R = 15 AND C = 6 THEN N$ = "7"
 840 IF R = 15 AND C = 21 THEN N$ = "8"
 850 IF R = 15 AND C = 36 THEN N$ = "9"
-860 IF R = 15 AND C = 51 THEN N$ = "û": SP = 1
+860 IF R = 15 AND C = 51 THEN N$ = "ï¿½": SP = 1
 870 IF R = 15 AND C = 66 THEN CLEAR : GOTO 10
 880 IF R = 19 AND C = 6 THEN N$ = "0"
 890 IF R = 19 AND C = 21 THEN N$ = "."
@@ -93,7 +110,7 @@
 930 GOTO 1040
 940 '--END
 950 R = 3: C1 = 5: COLOR 5
-960 LOCATE R, C1: PRINT STRING$(71, "Û")
+960 LOCATE R, C1: PRINT STRING$(71, "ï¿½")
 970 IF R = 5 THEN LOCATE R, 22: PRINT " C A L C U L A T O R   C L O S E D "
 980 IF R = 7 THEN LOCATE R, 31: PRINT " G O O D B Y E !!! "
 990 TI = TIMER + .1: WHILE TI > TIMER: WEND
@@ -111,7 +128,7 @@
 1110 LOCATE 4, 15: PRINT NU$: GOTO 350
 1120 IF T = 2 THEN 1130 ELSE 1160
 1130 T = 3: H$ = N$
-1140 IF H$ = "û" THEN A = SQR(A): GOTO 1300
+1140 IF H$ = "ï¿½" THEN A = SQR(A): GOTO 1300
 1150 IF H$ = "10" THEN NU$ = LEFT$(NU$, LEN(NU$) - 1): GOTO 1100 ELSE 350
 1160 IF T = 3 THEN 1170 ELSE 1200
 1170 NUM$ = NUM$ + N$: IF LEN(NUM$) > 15 THEN BEEP: GOTO 350
@@ -124,7 +141,7 @@
 1240 IF H$ = "*" THEN A = A * B: GOTO 1270
 1250 IF H$ = "/" THEN A = A / B: GOTO 1270
 1260 IF H$ = "10" THEN NUM$ = LEFT$(NUM$, LEN(NUM$) - 1): GOTO 1180 ELSE 350
-1270 IF K$ = "û" THEN A = SQR(A): GOTO 1300
+1270 IF K$ = "ï¿½" THEN A = SQR(A): GOTO 1300
 1280 NU$ = STR$(A): T = 3: BUM$ = NUM$: NUM$ = ""
 1290 IF K$ = "=" THEN 1300 ELSE 1480
 1300 COLOR 1, 8: LOCATE 4, 15: PRINT STRING$(30, " "): COLOR 10
@@ -148,7 +165,7 @@
 1480 H$ = K$: GOTO 350
 1490 '---help
 1500 COLOR 15, 1
-1510 LOCATE 2, 33: PRINT "þ [ H E L P ] þ"
+1510 LOCATE 2, 33: PRINT "ï¿½ [ H E L P ] ï¿½"
 1520 LOCATE 3, 5: PRINT STRING$(71, " ")
 1530 LOCATE 4, 5: PRINT "  This calculator is different from others because of its easy to use  "
 1540 LOCATE 5, 5: PRINT "  controls, its square root facility & the backspace key.              "
@@ -159,7 +176,7 @@
 1590 LOCATE 10, 5: PRINT " will get will be 379164000000.The answer got is accurate only upto 7  "
 1600 LOCATE 11, 5: PRINT " digits.Any other calculator would have shown the answer as 3.79164E+07"
 1610 LOCATE 13, 5: PRINT " Here are some special keys you can use...                             "
-1620 LOCATE 14, 5: PRINT STRING$(51, "Ä") + STRING$(20, " "): LOCATE 12, 5: PRINT STRING$(71, " ")
+1620 LOCATE 14, 5: PRINT STRING$(51, "ï¿½") + STRING$(20, " "): LOCATE 12, 5: PRINT STRING$(71, " ")
 1630 LOCATE 15, 5: PRINT " A - To see the answer as another      Esc - To exit in a similar way  "
 1640 LOCATE 16, 5: PRINT "  calculator would have shown it.         as OFF.                      "
 1650 LOCATE 17, 5: PRINT " Spacebar - Same function as the       B - To hear a beep on pressing  "
