@@ -1,3 +1,5 @@
+![Alt text](images/calculator.jpg?raw=true "Calculator")
+
 Calculator
 ==========
 
